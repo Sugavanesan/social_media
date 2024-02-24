@@ -1,10 +1,9 @@
-import React from 'react'
-import { Link, useParams } from 'react-router-dom'
+import React from "react";
+import { Link, useParams } from "react-router-dom";
 
-const Postpage = ({posts,handleDelete}) => {
-
-const{id}=useParams();
-const post=posts.find(post=>(post.id).toString()===id)
+const Postpage = ({ posts, handleDelete }) => {
+  const { id } = useParams();
+  const post = posts.find((post) => post.id.toString() === id);
 
   return (
     <main className="PostPage">
@@ -28,7 +27,7 @@ const post=posts.find(post=>(post.id).toString()===id)
         {!post && (
           <>
             <h2>Page Not Found</h2>
-            <p>Well Thats Disappointing</p>
+            <p>Well Thats Disappointing fgrege</p>
             <p>
               <Link to="/"> Visit Our Homepage</Link>
             </p>
@@ -37,6 +36,6 @@ const post=posts.find(post=>(post.id).toString()===id)
       </article>
     </main>
   );
-}
+};
 
-export default Postpage
+export default Postpage;
