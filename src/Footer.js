@@ -1,12 +1,12 @@
-import React from 'react'
+import React from "react";
 
 const Footer = () => {
-  const Today=new Date()
+  const Today = new Date();
   return (
-    <footer className='Footer'>
-        <p>Copyright &copy; {Today.getFullYear()}</p>
+    <footer className="Footer">
+      <p>Copyright &copy; 22/2/2024 {Today.getFullYear()}</p>
     </footer>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;
