@@ -4,7 +4,7 @@ const Footer = () => {
   const Today = new Date();
   return (
     <footer className="Footer">
-      <p>Copyright &copy; 22/3/2019 {Today.getFullYear()}</p>
+      <p>Copyright &copy; 25/3/2019 {Today.getFullYear()}</p>
     </footer>
   );
 };
